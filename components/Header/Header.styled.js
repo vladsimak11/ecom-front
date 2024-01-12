@@ -19,7 +19,26 @@ export const StyledNav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
+  position: relative;
   color: #001f3f;
   font-size: 20px;
   line-height: 1.6;
+
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #e74c3c;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  &:hover:after, &:active:after { 
+    width: 100%; 
+    left: 0; 
+  }   
 `;
