@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BackgroundHero = styled.div`
-  color: #d3d3d3;
+  color: var(--default-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,5 +38,6 @@ export const StyledDesc = styled.p`
   text-align: center;
   padding: 0 250px;
   margin-top: 20px;
+  margin-bottom: 30px;
   line-height: 1.6;
 `;

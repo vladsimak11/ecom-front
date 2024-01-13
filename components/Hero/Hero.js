@@ -3,6 +3,7 @@ import { BackgroundHero, StyledTitle, StyledDesc } from './Hero.styled';
 
 import Hero1280 from '../../images/hero/hero-1280.jpg';
 import Hero2560 from '../../images/hero/hero-2560.jpg';
+import Button from "../Button/Button";
 
 const imagesHero = {
   Hero1280,
@@ -14,9 +15,11 @@ export default function Hero() {
     <div>
       <Container>
         <BackgroundHero images={imagesHero}>
-          <StyledTitle><b>Ecomm:</b> Step into Comfort, Step into Style -<br /> Explore Our Top Picks Today!</StyledTitle>
-          <StyledDesc>Welcome to <b>Ecomm</b>, your go-to destination for the trendiest and coziest hoodies! Step into a world where comfort meets style, and explore a curated collection of premium hoodies that effortlessly blend fashion and functionality. Our shop is a haven for hoodie enthusiasts, offering a diverse range of designs, colors, and materials to suit every taste.</StyledDesc>
+          <StyledTitle><strong>Ecomm:</strong> Step into Comfort, Step into Style -<br /> Explore Our Top Picks Today!</StyledTitle>
+          <StyledDesc>Welcome to <strong>Ecomm</strong>, your go-to destination for the trendiest and coziest hoodies! Step into a world where comfort meets style, and explore a curated collection of premium hoodies that effortlessly blend fashion and functionality. Our shop is a haven for hoodie enthusiasts, offering a diverse range of designs, colors, and materials to suit every taste.</StyledDesc>
+          <Button name = 'All products' />
         </BackgroundHero>
+
       </Container>
     </div>
   )

@@ -20,7 +20,7 @@ export const StyledNav = styled.nav`
 
 export const NavLink = styled(Link)`
   position: relative;
-  color: #001f3f;
+  color: var(--main-color);
   font-size: 20px;
   line-height: 1.6;
 
@@ -32,7 +32,7 @@ export const NavLink = styled(Link)`
     height: 3px;
     left: 50%;
     position: absolute;
-    background: #e74c3c;
+    background: var(--second-color);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
