@@ -1,18 +1,17 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
-export const ButtonCart = styled.button`
+export const StyledLink = styled(Link)`
   font-size: 20px;
   background-color: var(--second-color);
   color: var(--default-color);
-  padding: 4px 16px;
-  border: 2px solid transparent;
+  padding: 15px 25px;
   border-radius: 5px;
   transition: var(--main-transition);
 
   &:hover {
     background-color: var(--default-color);
     color: var(--main-color);
-    border-color: var(--main-color);
   }
 `;
 

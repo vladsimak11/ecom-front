@@ -1,7 +1,7 @@
-import { StyledButton } from './Button.styled';
+import { ButtonCart } from './Button.styled';
 
-export default function Button({name}) {
+export default function Button({children}) {
   return (
-    <StyledButton href={'/products'}>{name}</StyledButton>
+    <ButtonCart type="button">{children}</ButtonCart>
   )
 }

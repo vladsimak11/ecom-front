@@ -2,7 +2,7 @@ import 'normalize.css/normalize.css';
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
   :root {
     --default-color: #d3d3d3;
@@ -23,8 +23,9 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
-  h1 {
+  h1, h2, p {
     margin: 0;
+    padding: 0;
   }
 
   img {
