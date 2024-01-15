@@ -2,10 +2,15 @@ import Link from "next/link";
 import Image from 'next/image'
 import { StyledHeader, Wrapper, StyledNav, NavLink } from './Header.styled';
 import Container from "../Container/Container";
+import { useContext } from "react";
+import { CartContext } from "../CartContext/CartContext";
 
 import LogoImg250 from '../../images/ecomm-logo-250.png';
 
+
 export default function Header() {
+  const {cartProducts} = useContext(CartContext);
+
   return (
     <StyledHeader>
       <Container>
@@ -23,7 +28,7 @@ export default function Header() {
             <NavLink href={'/products'}>Products</NavLink>
             <NavLink href={'/categories'}>Categories</NavLink>
             <NavLink href={'/account'}>Account</NavLink>
-            <NavLink href={'/cart'}>Cart (0)</NavLink>
+            <NavLink href={'/cart'}>Cart ({cartProducts.length})</NavLink>
           </StyledNav>
         </Wrapper>
       </Container>

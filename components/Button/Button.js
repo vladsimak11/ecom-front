@@ -1,7 +1,7 @@
 import { ButtonCart } from './Button.styled';
 
-export default function Button({children}) {
+export default function Button({children, onClick, ...rest}) {
   return (
-    <ButtonCart type="button">{children}</ButtonCart>
+    <ButtonCart onClick={onClick} {...rest}>{children}</ButtonCart>
   )
 }
