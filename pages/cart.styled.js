@@ -16,6 +16,7 @@ export const CartBox = styled.div`
 export const StyledTable = styled.table`
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 
   th {
     text-align: left;
@@ -37,4 +38,13 @@ export const CartImg = styled.img`
 export const CartTitle = styled.p`
   margin-top: 20px;
   margin-bottom: 20px;
+`;
+
+export const QuantityCart = styled.span`
+  padding: 0 5px;
+`;
+
+export const CityHolder = styled.div`
+  display: flex;
+  gap: 5px;
 `;
