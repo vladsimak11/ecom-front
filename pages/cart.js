@@ -8,7 +8,7 @@ import { CartContext } from "@/components/CartContext/CartContext";
 import axios from "axios";
 
 export default function CartPage() {
-  const {cartProducts, addProduct, removeProduct} = useContext(CartContext);
+  const {cartProducts, addProduct, removeProduct, clearCart} = useContext(CartContext);
   const [products, setProducts] = useState([]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -16,6 +16,7 @@ export default function CartPage() {
   const [postalCode, setPostalCode] = useState('');
   const [streetAddress,setStreetAddress] = useState('');
   const [country,setCountry] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
     if(cartProducts.length > 0) {
@@ -29,6 +30,16 @@ export default function CartPage() {
 
   }, [cartProducts]);
 
+  // useEffect(() => {
+  //   if (typeof window === 'undefined') {
+  //     return;
+  //   }
+  //   if (window?.location.href.includes('success')) {
+  //     setIsSuccess(true);
+  //     clearCart();
+  //   }
+  // }, []);
+
   let count;
 
   function moreOfThisProduct(id) {
@@ -39,12 +50,49 @@ export default function CartPage() {
     removeProduct(id);
   }
 
+  async function goToPayment() {
+    const response = await axios.post('/api/checkout', {
+      name,
+      email,
+      city,
+      postalCode,
+      streetAddress,
+      country,
+      cartProducts,
+    });
+
+    if (response.data.url) {
+      window.location = response.data.url;
+    }
+    
+    setIsSuccess(true);
+    clearCart();
+  }
+
   let total = 0;
 
   for (const productId of cartProducts) {
     const price = products.find(p => p._id === productId)?.price || 0;
     total += price;
   }
+
+  
+  if (isSuccess) {
+    return (
+      <>
+        <Header />
+        <Container>
+          <CartWrapper>
+            <CartBox>
+            <h1>Thanks for your order!</h1>
+            <p>We will email you when your order will be sent.</p>
+            </CartBox>
+          </CartWrapper>
+        </Container>
+      </>
+    )
+  }
+
   return (
     <>
       <Header/>
@@ -139,7 +187,7 @@ export default function CartPage() {
                   name="country"
                   onChange={ev => setCountry(ev.target.value)}/>
 
-                <Button primary block>Continue to payment</Button>
+                <Button primary block onClick={goToPayment}>Continue to payment</Button>
               </CartBox>
             )}
         </CartWrapper>
