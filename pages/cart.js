@@ -6,6 +6,7 @@ import Input from '../components/Input/Input';
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "@/components/CartContext/CartContext";
 import axios from "axios";
+import Footer from "@/components/Footer/Footer";
 
 export default function CartPage() {
   const {cartProducts, addProduct, removeProduct, clearCart} = useContext(CartContext);
@@ -89,6 +90,7 @@ export default function CartPage() {
             </CartBox>
           </CartWrapper>
         </Container>
+        <Footer/>
       </>
     )
   }
@@ -192,6 +194,7 @@ export default function CartPage() {
             )}
         </CartWrapper>
       </Container>
+      <Footer/>
     </>
   )
 }

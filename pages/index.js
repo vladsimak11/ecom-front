@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import NewProducts from "@/components/NewProducts/NewProducts";
@@ -11,6 +12,7 @@ export default function HomePage({newProducts}) {
       <Header />
       <Hero/>
       <NewProducts products={newProducts} />
+      <Footer/>
     </div>
   );
 }

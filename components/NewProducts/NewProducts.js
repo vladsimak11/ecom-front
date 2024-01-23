@@ -1,12 +1,12 @@
 import Container from "../Container/Container";
 import ProductsGrid from "../ProductsGrid/ProductsGrid";
-import { Header } from "./NewProducts.styled";
+import { Title } from "../../components/NewProducts/NewProducts.styled";
 
 export default function NewProducts({products}) {
   return (
     <div>
       <Container>
-        <Header>New Products</Header>
+        <Title>New Products</Title>
         <ProductsGrid products={products}/>
       </Container>
     </div>
