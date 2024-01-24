@@ -9,6 +9,12 @@ export const BoxImg = styled(Link)`
 export const ProductImg = styled.img`
   width: 100%;
   border: 2px solid var(--main-color);
+  box-shadow: 0px 0px 0px 0px rgba(0,31,63,0.41);
+
+  ransition: var(--main-transition);
+  &:hover {
+    box-shadow: 2px 2px 5px 0px rgba(0,31,63,0.41);
+  }
   box-sizing: border-box;
 `;
 

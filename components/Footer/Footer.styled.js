@@ -5,4 +5,7 @@ export const StyledFooter = styled.footer`
   margin-top: 30px;
   text-align: center;
   padding: 30px 0px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2;
 `;

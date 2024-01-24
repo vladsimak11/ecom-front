@@ -20,7 +20,7 @@ export default function HomePage({newProducts}) {
 export async function getServerSideProps() {
   await mongooseConnect();
 
-  const newProducts = await Product.find({}, null, {sort: {'_id': -1}, limit: 8});
+  const newProducts = await Product.find({}, null, {sort: {'_id': -1}, limit: 4});
 
   return {
     props: {

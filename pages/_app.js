@@ -24,9 +24,13 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
-  h1, h2, p {
+  h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+  }
+
+  li {
+    list-style-type: none;
   }
 
   img {
