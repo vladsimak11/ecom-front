@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
+import MainText from "@/components/MainText/MainText";
 import NewProducts from "@/components/NewProducts/NewProducts";
+import Presents from "@/components/Presents/Presents";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
 
@@ -12,6 +14,8 @@ export default function HomePage({newProducts}) {
       <Header />
       <Hero/>
       <NewProducts products={newProducts} />
+      <Presents />
+      <MainText/>
       <Footer/>
     </div>
   );

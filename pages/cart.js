@@ -15,7 +15,7 @@ export default function CartPage() {
   const [email, setEmail] = useState('');
   const [city, setCity] = useState('');
   const [postalCode, setPostalCode] = useState('');
-  const [streetAddress,setStreetAddress] = useState('');
+  const [streetAddress, setStreetAddress] = useState('');
   const [country,setCountry] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
 
