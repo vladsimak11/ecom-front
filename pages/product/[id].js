@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header";
 import Container from "../../components/Container/Container";
 import Footer from "@/components/Footer/Footer";
-import { Title, ColWrapper, PriceRow, Price } from '../product/Product.styled';
+import { Title, ColWrapper, PriceRow, Price } from '../../components/Product.styled';
 import Button from '../../components/Button/Button';
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";

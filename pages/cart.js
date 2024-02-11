@@ -1,6 +1,6 @@
 import Header from "@/components/Header/Header";
 import Container from "../components/Container/Container";
-import { CartWrapper, CartBox, StyledTable, CartImg, CartTitle, QuantityCart,  CityHolder } from "./cart.styled";
+import { CartWrapper, CartBox, StyledTable, CartImg, CartTitle, QuantityCart,  CityHolder } from "../components/cart.styled";
 import Button from '../components/Button/Button';
 import Input from '../components/Input/Input';
 import { useContext, useEffect, useState } from "react";

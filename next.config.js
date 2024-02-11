@@ -4,7 +4,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  pageExtensions: ['styled.js'],
 }
 
 module.exports = nextConfig

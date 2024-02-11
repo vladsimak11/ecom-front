@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import Header from "@/components/Header/Header";
 import Container from "../components/Container/Container";
-import { Title, ListAbout, ItemHeader, ItemAbout } from "./about.styled";
+import { Title, ListAbout, ItemHeader, ItemAbout } from "../components/about.styled";
 import Footer from "@/components/Footer/Footer";
 
 import About1280 from '../images/about/About1280.jpg';
