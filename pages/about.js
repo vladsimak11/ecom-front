@@ -16,7 +16,7 @@ export default function AboutPage() {
         
         <ListAbout>
           <ItemAbout>
-            Welcome to our online emporium, where style meets comfort – introducing our exclusive collection of hoodies that redefine casual fashion. Our eCommerce shop is your go-to destination for the trendiest and most comfortable hoodies that seamlessly blend fashion and functionality.
+            Welcome to our online emporium, where style meets comfort &#8211; introducing our exclusive collection of hoodies that redefine casual fashion. Our eCommerce shop is your go-to destination for the trendiest and most comfortable hoodies that seamlessly blend fashion and functionality.
           </ItemAbout>
 
           <ItemAbout>
@@ -62,7 +62,7 @@ export default function AboutPage() {
           </ItemAbout>
 
           <ItemAbout>
-            Dive into the world of comfort and style with our hoodie collection – where fashion meets function, and every purchase is a step towards expressing your unique identity. Shop now and embrace the cozy revolution!
+            Dive into the world of comfort and style with our hoodie collection &#8211; where fashion meets function, and every purchase is a step towards expressing your unique identity. Shop now and embrace the cozy revolution!
           </ItemAbout>
         </ListAbout>
 

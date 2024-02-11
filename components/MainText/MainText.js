@@ -30,7 +30,7 @@ export default function MainText() {
               Accessible Pricing
             </MainTextHeader>
             <MainTextItem>
-              We believe that everyone deserves to experience the joy of owning a high-quality hoodie without breaking the bank. That's why our store offers affordable pricing without compromising on style or quality. Fashion-forward choices are within reach for everyone! 
+              We believe that everyone deserves to experience the joy of owning a high&#8211;quality hoodie without breaking the bank. That's why our store offers affordable pricing without compromising on style or quality. Fashion&#8211;forward choices are within reach for everyone! 
             </MainTextItem>
           </div>
 

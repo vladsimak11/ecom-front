@@ -118,7 +118,7 @@ export default function CartPage() {
 
                 <tbody>
                     {products.map(({_id, title, price, images}) => (
-                      <tr>
+                      <tr key={_id}>
                         <td>
                           <CartTitle>{title}</CartTitle>
                           <CartImg src={images[0]} alt={title} />
