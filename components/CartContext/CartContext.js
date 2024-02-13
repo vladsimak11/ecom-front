@@ -8,8 +8,6 @@ export function CartContextProvider({children}) {
 
   const [cartProducts, setCartProducts] = useState([]);
 
-  console.log(cartProducts);
-
   useEffect(() => {
     if (cartProducts?.length > 0) {
       ls?.setItem('cart', JSON.stringify(cartProducts));
