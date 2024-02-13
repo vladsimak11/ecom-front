@@ -102,7 +102,7 @@ export default function CartPage() {
         <CartWrapper>
           <CartBox>
             <h2>Cart</h2>
-            {!cartProducts.length && (
+            {!cartProducts?.length && (
               <div>Your cart is empty</div>
             )}
 
